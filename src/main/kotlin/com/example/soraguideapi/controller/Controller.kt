@@ -16,13 +16,13 @@ import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.ResponseEntity
 
 /**
- * Controller : Controller会員および家族の有効マイルクラス。
+ * Controller : Controller会
  * @author  JIT ShotaSaito小川
  * @version 1.0.0
  */
 @Controller
 //Default URL
-@RequestMapping("greeting")
+@RequestMapping("index")
 class Controller {
 
     //Initialize TopicsGetService
@@ -30,7 +30,7 @@ class Controller {
     var topicsGetService: TopicsGetService? = null
 
     //API Request URL:/api/topics
-    @RequestMapping("/api/topics")
+    @RequestMapping("/getAllTopics")
 
     //Get All Topics
     fun api_index(): ResponseEntity<List<Topic>> {
