@@ -1,9 +1,9 @@
 /**
- * Revision history【修正履歴】
+ * Revision history
  * --------------------------------------------------
  * Date        Version    Name            Comments
  * --------------------------------------------------
- * 2019/09/03    1.0.0    ShotaSaito  小川    新規追加
+ * 2019/09/03    1.0.0    ShotaSaito
  */
 
 package com.example.soraguideapi.entity
