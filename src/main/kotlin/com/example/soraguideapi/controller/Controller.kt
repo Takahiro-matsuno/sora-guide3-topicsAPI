@@ -9,7 +9,7 @@
 package com.example.soraguideapi.controller
 
 import com.example.soraguideapi.entity.Topic
-import com.example.soraguideapi.service.TopicsGetService
+import com.example.soraguideapi.model.TopicsGetService
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.beans.factory.annotation.Autowired
