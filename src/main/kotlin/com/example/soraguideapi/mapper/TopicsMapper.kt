@@ -1,9 +1,9 @@
 /**
- * Revision history【修正履歴】
+ * Revision history
  * --------------------------------------------------
  * Date        Version    Name            Comments
  * --------------------------------------------------
- * 2019/09/03    1.0.0    ShotaSaito  小川    新規追加
+ * 2019/09/03    1.0.0    ShotaSaito
  */
 
 package com.example.soraguideapi.mapper
@@ -14,8 +14,8 @@ import org.apache.ibatis.annotations.Param
 import org.apache.ibatis.annotations.Select
 
 /**
- * Mapper : SQL associated with processingよび家族の有効マイルクラス。
- * @author  JIT ShotaSaito小川
+ * Mapper : SQL associated with processing
+ * @author  JIT ShotaSaito
  * @version 1.0.0
  */
 

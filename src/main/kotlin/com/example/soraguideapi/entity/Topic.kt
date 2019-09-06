@@ -9,8 +9,8 @@
 package com.example.soraguideapi.entity
 
 /**
- * Entity : Topic会員および家族の有効マイルクラス。
- * @author  JIT ShotaSaito小川
+ * Entity : Topic
+ * @author  JIT ShotaSaito
  * @version 1.0.0
  */
-data class Topic (val topic_id: Integer,val topic_title: String, val topic_content: String, val topic_image: String, val display: Integer)
+data class Topic (val topic_id: Int,val topic_title: String, val topic_content: String, val topic_image: String, val display: Int)
