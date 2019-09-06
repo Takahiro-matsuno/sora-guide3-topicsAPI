@@ -16,8 +16,8 @@ import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
 /**
- * Service : TopicsGetService会員および家族の有効マイルクラ
- * @author  JIT ShotaSaito小川
+ * Service : TopicsGetService
+ * @author  JIT ShotaSaito
  * @version 1.0.0
  */
 
