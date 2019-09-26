@@ -32,6 +32,7 @@ class TopicsGetService {
     //CALL findAll
     fun findAll(): List<Topic> {
         return topicsMapper!!.findAll()
+
     }
 
 }
