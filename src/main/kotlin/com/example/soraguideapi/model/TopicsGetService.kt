@@ -8,10 +8,8 @@
  */
 
 package com.example.soraguideapi.model
-import com.example.soraguideapi.mapper.TopicsMapper
-import com.example.soraguideapi.entity.Topic
-
-import org.springframework.beans.factory.annotation.Autowired
+import com.example.soraguideapi.entity.TopicEntity
+import com.example.soraguideapi.repository.TopicRepository
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 
@@ -23,16 +21,13 @@ import org.springframework.transaction.annotation.Transactional
 
 @Service
 @Transactional
-class TopicsGetService {
-
-    //Initialize TopicsMapper
-    @Autowired
-    internal var topicsMapper: TopicsMapper? = null
+class TopicsGetService(
+        private val topicRepository:TopicRepository
+) {
 
     //CALL findAll
-    fun findAll(): List<Topic> {
-        return topicsMapper!!.findAll()
-
+    fun findAll(): List<TopicEntity> {
+        return topicRepository.findAll()
     }
 
 }

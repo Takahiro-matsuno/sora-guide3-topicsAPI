@@ -8,7 +8,7 @@
 
 package com.example.soraguideapi.controller
 
-import com.example.soraguideapi.entity.Topic
+import com.example.soraguideapi.entity.TopicEntity
 import com.example.soraguideapi.model.TopicsGetService
 import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping
@@ -33,7 +33,7 @@ class Controller {
     @RequestMapping("/getAllTopics")
 
     //Get All Topics
-    fun api_index(): ResponseEntity<List<Topic>> {
+    fun api_index(): ResponseEntity<List<TopicEntity>> {
 
         //Call TopicsGetService
         val res = topicsGetService!!.findAll()
