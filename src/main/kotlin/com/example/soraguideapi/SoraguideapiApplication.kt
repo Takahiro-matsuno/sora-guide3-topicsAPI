@@ -10,6 +10,7 @@ package com.example.soraguideapi
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 
 /**
  * SpringBoot Settings
@@ -18,7 +19,7 @@ import org.springframework.boot.runApplication
  */
 
 @SpringBootApplication
-class SoraguideapiApplication
+class SoraguideapiApplication: SpringBootServletInitializer()
 
 //Main Method
 fun main(args: Array<String>) {

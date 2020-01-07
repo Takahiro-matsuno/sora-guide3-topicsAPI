@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.http.ResponseEntity
+import org.springframework.web.bind.annotation.GetMapping
 
 /**
  * Controller : Controller
@@ -21,18 +22,11 @@ import org.springframework.http.ResponseEntity
  * @version 1.0.0
  */
 @Controller
-//Default URL
-@RequestMapping("index")
-class Controller {
-
-    //Initialize TopicsGetService
-    @Autowired
-    var topicsGetService: TopicsGetService? = null
-
-    //API Request URL:/api/topics
-    @RequestMapping("/getAllTopics")
-
+class Controller(
+        private val topicsGetService: TopicsGetService
+) {
     //Get All Topics
+    @GetMapping("/")
     fun api_index(): ResponseEntity<List<TopicEntity>> {
 
         //Call TopicsGetService

@@ -6,6 +6,7 @@ plugins {
 	kotlin("jvm") version "1.2.71"
 	kotlin("plugin.spring") version "1.2.71"
 	idea
+	war
 }
 
 group = "com.example"
@@ -55,4 +56,9 @@ tasks.withType<KotlinCompile> {
 		freeCompilerArgs = listOf("-Xjsr305=strict")
 		jvmTarget = "1.8"
 	}
+}
+
+tasks.withType<War> {
+	enabled = true
+	archiveName = "soraguideapi.war"
 }
